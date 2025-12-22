@@ -4,6 +4,7 @@ import { PointerHighlight } from "@/components/ui/pointer-highlight";
 import { Highlighter } from './ui/highlighter';
 import { cn } from '@/lib/utils'
 import { Marquee } from './ui/marquee';
+import { ArrowDown } from 'lucide-react';
 
 const reviews = [
   {
@@ -84,7 +85,7 @@ const ReviewCard = ({
 
 const Hero = () => {
   return (
-    <Section className="container mx-auto px-4 py-15 text-center animate-fade-in">
+    <Section className="container h-screen mx-auto px-4 py-15 text-center animate-fade-in">
         <div className="max-w-3xl mx-auto space-y-6">
           <h1 className="text-5xl font-bold tracking-tight">
             Une plateforme de ressources
@@ -102,10 +103,10 @@ const Hero = () => {
           </p>
           <div className="flex gap-4 justify-center pt-4">
             <Button size="lg" >
-              Commencer maintenant
+              Commençons
             </Button>
             <Button size="lg" variant="outline">
-              En savoir plus
+              En savoir plus <ArrowDown className="ml-1"/>
             </Button>
           </div>
           <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">

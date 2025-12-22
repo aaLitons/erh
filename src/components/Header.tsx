@@ -9,7 +9,7 @@ const Header = () => {
   const { toggle, isOpen } = useSidebar()
 
   return (
-    <header className="sticky top-0">
+    <header className="sticky top-0 bg-background h-16">
       <Section className="flex items-baseline">
         <h1 className="text-2xl font-bold text-primary">EduRessource-Hub </h1>
         <Copyright size={10}/>
